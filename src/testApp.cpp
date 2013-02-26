@@ -22,7 +22,10 @@ void testApp::draw(){
 
 //--------------------------------------------------------------
 void testApp::keyPressed(int key){
-    canon.takePicture();
+    if( key == ' ' )
+    {
+      canon.takePicture();
+    }
 }
 
 //--------------------------------------------------------------
